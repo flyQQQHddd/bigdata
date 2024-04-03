@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECharts 示例</title>
+    <!-- 引入 ECharts 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 引入 jquery 文件 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>{{ hello }}</h1>
+    <!-- 一个具有一定宽高的容器，用于渲染图表 -->
+    <div id="chart" style="width: 600px; height: 400px;"></div>
+
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+
+        // 使用 AJAX 请求获取数据
+        $.ajax({
+            url: 'http://47.116.207.105:8080/api',
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+
+                // 获取数据成功后，处理数据并渲染图表
+                var option = {
+                    title: {
+                        text: '示例柱状图'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data: ['销量']
+                    },
+                    xAxis: {
+                        data: data.data.categories
+                    },
+                    yAxis: {},
+                    series: [{
+                        name: '销量',
+                        type: 'bar',
+                        data: data.data.data // 数据的 y 轴数值
+                    }]
+                };
+
+                // 使用刚指定的配置项和数据显示图表
+                myChart.setOption(option);
+            },
+            error: function (xhr, status, error) {
+                console.error('获取数据失败:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
