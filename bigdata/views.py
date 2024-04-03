@@ -11,3 +11,8 @@ def test(request):
 def index(request):
 
     return render(request, 'index.html')
+
+
+def analyzation(request):
+
+    return render(request, 'inner-page.html')

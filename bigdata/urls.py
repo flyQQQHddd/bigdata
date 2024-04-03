@@ -24,9 +24,15 @@ from django.conf import settings
 from django.views.generic import RedirectView
 
 urlpatterns = [
+    # index 主页面
     path('', RedirectView.as_view(url='index/', permanent=True)),
     path('index/', views.index, name="index"),
+    # 数据分析
+    path('analyzation/', views.analyzation, name="analyzation"),
+    # 数据后台
     path('admin/', admin.site.urls),
+    # API接口
     path('api/', api.api_base, name="api"),
+    # 测试功能界面
     path('test/', views.test, name="test"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
