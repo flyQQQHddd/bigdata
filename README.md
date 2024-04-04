@@ -1,10 +1,15 @@
-# 环境配置
 
-## 使用 VSCode 登录服务器
+# 项目预览
+
+http://47.116.207.105:8080
+
+## 环境配置
+
+### 使用 VSCode 登录服务器
 
 使用 vscode 的 ssh 插件远程登录服务器
 
-## 配置MiniConda
+### 配置MiniConda
 
 ```
 # 下载 miniconda 安装包
@@ -15,7 +20,7 @@ bash Miniconda3-py39_24.1.2-0-Linux-x86_64.sh
 source ~/.bashrc
 ```
 
-## 配置Python以及Django
+### 配置Python以及Django
 
 ```
 # 创建 python 虚拟环境
@@ -26,7 +31,7 @@ conda activate bigdata
 pip install django -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
-## 创建并启动Django项目
+### 创建并启动Django项目
 
 ```
 # 新建名为 bigdata 的 django 项目
@@ -37,7 +42,7 @@ cd bigdata
 python manage.py runserver
 ```
 
-## 基础配置
+### 基础配置
 
 以下操作均在`setting.py`中进行
 
@@ -61,7 +66,7 @@ python manage.py runserver
    ]
    ```
 
-## 服务器后台运行服务
+### 服务器后台运行服务
 
 ```
 # 安装 tmux 程序
