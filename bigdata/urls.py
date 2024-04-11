@@ -28,7 +28,15 @@ urlpatterns = [
     path('', RedirectView.as_view(url='index/', permanent=True)),
     path('index/', views.index, name="index"),
     # 数据分析
-    path('analyzation/', views.analyzation, name="analyzation"),
+    path('analysis/', views.analysis, name="analyzation"),
+    #数据预测
+    path('prediction/',views.prediction,name="prediction"),
+    #报告
+    path('report/',views.report,name="report"),
+    #快速开始（上传）
+    path('upload/',views.upload,name="upload"),
+    #帮助与支持
+    path('help/',views.help,name="help"),
     # 数据后台
     path('admin/', admin.site.urls),
     # API接口
