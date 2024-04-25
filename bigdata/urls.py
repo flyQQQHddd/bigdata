@@ -23,12 +23,23 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic import RedirectView
 
+
 urlpatterns = [
     # index 主页面
     path('', RedirectView.as_view(url='index/', permanent=True)),
     path('index/', views.index, name="index"),
-    # 数据分析
-    path('analyzation/', views.analyzation, name="analyzation"),
+    #课程评估
+    path('curriculum/', views.curriculum, name="curriculum"),
+    #用户分析
+    path('user/',views.user,name="user"),
+    #个性推荐
+    path('personalized/',views.personalized,name="personalized"),
+    #资源优化
+    path('resource/',views.resource,name="resource"),
+    #快速开始（上传）
+    path('upload/',views.upload,name="upload"),
+    #帮助与支持
+    path('help/',views.help,name="help"),
     # 数据后台
     path('admin/', admin.site.urls),
     # API接口

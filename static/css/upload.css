@@ -1,0 +1,170 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6990F2;
+} */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+::selection{
+  color: #fff;
+  background: #6990F2;
+}
+
+.wrapper{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1030px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  /* box-shadow: 7px 7px 12px 7px rgba(0,0,0,0.05); */
+}
+.wrapper header{
+  color: #3b6cea;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form{
+  height: 167px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: flex-start;
+  /* align-items:center; */
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  flex-direction: row;
+  border-radius: 5px;
+  border: 2px dashed #4165a3;;
+  /* margin-bottom: 10px; */
+}
+
+.wrapper section {
+  padding: 0px 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 确保图标和文字在Flex容器中垂直居中 */
+  /* 可能需要一些样式来调整图标和文字的大小，比如固定图标的大小 */
+}
+
+.form-group i {
+  /* 设置图标的大小，以确保与文字的对齐 */
+  margin-top: 30px;
+  font-size: 60px; /* 根据实际情况调整 */
+  color: #4165a3;
+  margin-left: 80px;
+}
+
+.form-group p {
+  /* 根据需要调整文字样式 */
+  margin-top: 10px; /* 调整文字与图标的间距 */
+  text-align: center; /* 如果需要文字居中 */
+  color: #4165a3;
+  margin-left: 75px;
+}
+
+.form-text-right {
+  display: flex;
+  margin-top: 30px; 
+  flex-direction: column;
+  align-items: flex-start; /* 文本靠容器的右侧对齐 */
+  justify-content: flex-start; /* 文本从容器的顶部开始排列 */
+}
+
+.form-text-right p {
+  color:  #263959;
+  font-size: 16px;
+  margin: 5px 0; /* 根据需要调整间距 */
+  /* 如果需要更多的样式调整 */
+  text-align: right;
+  margin-left: 150px;
+}
+
+section .row{
+  margin-bottom: 10px;
+  background: #E9F0FF;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .row i{
+  color: #6990F2;
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background: #6990F2;
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 382px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check{
+  font-size: 16px;
+}
+
+
+

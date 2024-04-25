@@ -53,6 +53,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'bigdata.urls'
 
+print(BASE_DIR)
+print(os.path.join(BASE_DIR, 'templates'))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -116,6 +118,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'None'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -131,3 +134,16 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 允许文件上传
+FILE_UPLOAD_HANDLERS = [
+    "django.core.files.uploadhandler.MemoryFileUploadHandler",
+    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
+]
+
+# 指定上传文件的最大大小
+FILE_UPLOAD_MAX_MEMORY_SIZE = 5242880  # 5MB
+
+MEDIA_ROOT = '/root/Desktop/data'
+
+APPEND_SLASH = False

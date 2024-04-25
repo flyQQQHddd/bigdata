@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Upload
+  </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="http://47.116.207.105:8080/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="../../static/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://47.116.207.105:8080/static/css/upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- 引入 jquery 文件 ：  <script src="http://47.116.207.105:8080/static/vendor/jquery/jquery.min.js"></script>-->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="http://47.116.207.105:8080/">GPT-NCCVer</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="http://47.116.207.105:8080">首页</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/curriculum/">课程评估</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/user/">用户分析</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/personalized/">个性推荐</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/resource/">资源优化</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/help/">帮助与支持</a></li>
+          <li><a class="getstarted scrollto" href="http://47.116.207.105:8080/upload/">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="http://47.116.207.105:8080/">首页</a></li>
+          <li>快速开始</li>
+        </ol>
+        <h2>快速开始</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+  </main><!-- End #main -->
+
+  <!-- ======= 页面主要内容 ======= -->
+  <div class="wrapper">
+    <form action={% url 'upload' %} enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-group">
+        <input class="file-input" type="file" name="files" multiple hidden>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+      </div>
+      <div class="form-text-right">
+        <p>● 请上传csv格式的文件，其他类型文件不会被加入下载队列</p>
+        <p>● 同时请保证文件命名和字段命名与【要求】一致</p>
+        <p>● 上传文件即表示您认同我们的【隐私协议】</p>
+        <!-- 如果需要，可以添加更多的 <p> 标签 -->
+      </div>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+  </footer><!-- End Footer -->
+
+
+  <script src="http://47.116.207.105:8080/static/js/upload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Help</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+
+  <!-- Favicons -->
+  <link href="http://47.116.207.105:8080/static/img/favicon.png" rel="icon">
+  <link href="http://47.116.207.105:8080/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="http://47.116.207.105:8080/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="http://47.116.207.105:8080/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="http://47.116.207.105:8080/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://47.116.207.105:8080/static/css/docs.css">
+  <!-- 引入 ECharts 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <!-- 引入 jquery 文件 -->
+  <script src="http://47.116.207.105:8080/static/vendor/jquery/jquery.min.js"></script>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="http://47.116.207.105:8080/">GPT-NCCVer</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="http://47.116.207.105:8080">首页</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/curriculum/">课程评估</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/user/">用户分析</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/personalized/">个性推荐</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/resource/">资源优化</a></li>
+          <li><a class="nav-link scrollto" href="http://47.116.207.105:8080/help/">帮助与支持</a></li>
+          <li><a class="getstarted scrollto" href="http://47.116.207.105:8080/upload/">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="container-xxl my-md-4 bd-layout">
+    <aside class="bd-sidebar" style="margin-top: 100px;">
+      <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+        <ul class="list-unstyled mb-0 py-3 pt-md-1">
+          <li class="mb-1">
+            <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+              data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">
+              使用指南
+            </button>
+
+            <div class="collapse show" id="getting-started-collapse">
+              <ul class="list-unstyled fw-normal pb-1 small">
+                <li><a href="#section1" class="d-inline-flex align-items-center rounded" aria-current="page">使用流程说明</a>
+                </li>
+                <li><a href="#" class="d-inline-flex align-items-center rounded">数据上传说明</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse"
+              data-bs-target="#customize-collapse" aria-expanded="false">
+              项目细节
+            </button>
+
+            <div class="collapse" id="customize-collapse">
+              <ul class="list-unstyled fw-normal pb-1 small">
+                <li><a href="#section2" class="d-inline-flex align-items-center rounded">四大功能介绍</a></li>
+                <li><a href="#" class="d-inline-flex align-items-center rounded">相关教育学文献</a></li>
+                <li><a href="#" class="d-inline-flex align-items-center rounded">课程视频评价细则</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse"
+              data-bs-target="#layout-collapse" aria-expanded="false">
+              隐私说明
+            </button>
+
+            <div class="collapse" id="layout-collapse">
+              <ul class="list-unstyled fw-normal pb-1 small">
+                <li><a href="#section3" class="d-inline-flex align-items-center rounded">隐私条例</a></li>
+                <li><a href="#" class="d-inline-flex align-items-center rounded">数据使用说明</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
+              联系我们
+            </button>
+    
+            <div class="collapse" id="content-collapse">
+              <ul class="list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="d-inline-flex align-items-center rounded">联系我们</a></li>
+                  <li><a href="#" class="d-inline-flex align-items-center rounded">title</a></li> 
+                </ul>
+            </div>
+          </li>
+      </nav>
+    </aside>
+    <main class="bd-main order-1" style="margin-top: 100px;">
+      <div id="section1">
+        <h2>第一部分</h2>
+        <p>当涉及到隐私设置时，我们非常重视您的个人信息保护。以下是我们的隐私设置说明：
+
+          1.收集信息的目的：
+          我们会收集您的个人信息，主要是为了提供更好的产品和服务体验。我们只会收集与我们的产品和服务相关的必要信息。
+
+          2.收集的信息类型：
+          我们可能会收集您的姓名、电子邮件地址、联系方式、地理位置等信息。这些信息将有助于我们更好地与您沟通，并提供个性化的服务。
+
+          3.信息存储和保护：
+          我们承诺将您的个人信息妥善保存，并采取适当的安全措施来保护您的信息不被未经授权的访问、使用或泄露。
+
+          4.信息使用：
+          我们只会在合法、合规的范围内使用您的个人信息。我们不会向第三方出售或共享您的个人信息，除非获得您的明确同意或法律要求。
+
+          5.信息访问和修改：
+          您有权访问、修改、更新或删除您的个人信息。如需进行相关操作，请联系我们的客服团队。
+
+          6.隐私权政策的更新：
+          我们保留随时更新隐私权政策的权利。在更新隐私权政策之前，我们将通过适当的方式通知您，并征得您的同意。
+
+          请注意，本隐私设置说明仅适用于我们的产品和服务。当您使用与我们无关的第三方服务时，请仔细阅读其隐私政策，并了解其信息收集、存储和使用方式。
+
+          如果您对我们的隐私设置有任何疑问或意见，请随时与我们联系。我们将尽力解答您的问题，并持续改进我们的隐私保护措施。</p>
+      </div>
+      <div>
+      </div>
+      <div id="section3">
+        <h2>第二部分</h2>
+        <p>这是第三部分的内容。当涉及到隐私设置时，我们非常重视您的个人信息保护。以下是我们的隐私设置说明：
+
+          1.收集信息的目的：
+          我们会收集您的个人信息，主要是为了提供更好的产品和服务体验。我们只会收集与我们的产品和服务相关的必要信息。
+
+          2.收集的信息类型：
+          我们可能会收集您的姓名、电子邮件地址、联系方式、地理位置等信息。这些信息将有助于我们更好地与您沟通，并提供个性化的服务。
+
+          3.信息存储和保护：
+          我们承诺将您的个人信息妥善保存，并采取适当的安全措施来保护您的信息不被未经授权的访问、使用或泄露。
+
+          4.信息使用：
+          我们只会在合法、合规的范围内使用您的个人信息。我们不会向第三方出售或共享您的个人信息，除非获得您的明确同意或法律要求。
+
+          5.信息访问和修改：
+          您有权访问、修改、更新或删除您的个人信息。如需进行相关操作，请联系我们的客服团队。
+
+          6.隐私权政策的更新：
+          我们保留随时更新隐私权政策的权利。在更新隐私权政策之前，我们将通过适当的方式通知您，并征得您的同意。
+
+          请注意，本隐私设置说明仅适用于我们的产品和服务。当您使用与我们无关的第三方服务时，请仔细阅读其隐私政策，并了解其信息收集、存储和使用方式。
+
+          如果您对我们的隐私设置有任何疑问或意见，请随时与我们联系。我们将尽力解答您的问题，并持续改进我们的隐私保护措施。</p>
+      </div>
+      <div>
+      </div>
+      <div>
+        <h2>第三部分</h2>
+        <p>这是第三部分的内容。当涉及到隐私设置时，我们非常重视您的个人信息保护。以下是我们的隐私设置说明：
+
+          1.收集信息的目的：
+          我们会收集您的个人信息，主要是为了提供更好的产品和服务体验。我们只会收集与我们的产品和服务相关的必要信息。
+
+          2.收集的信息类型：
+          我们可能会收集您的姓名、电子邮件地址、联系方式、地理位置等信息。这些信息将有助于我们更好地与您沟通，并提供个性化的服务。
+
+          3.信息存储和保护：
+          我们承诺将您的个人信息妥善保存，并采取适当的安全措施来保护您的信息不被未经授权的访问、使用或泄露。
+
+          4.信息使用：
+          我们只会在合法、合规的范围内使用您的个人信息。我们不会向第三方出售或共享您的个人信息，除非获得您的明确同意或法律要求。
+
+          5.信息访问和修改：
+          您有权访问、修改、更新或删除您的个人信息。如需进行相关操作，请联系我们的客服团队。
+
+          6.隐私权政策的更新：
+          我们保留随时更新隐私权政策的权利。在更新隐私权政策之前，我们将通过适当的方式通知您，并征得您的同意。
+
+          请注意，本隐私设置说明仅适用于我们的产品和服务。当您使用与我们无关的第三方服务时，请仔细阅读其隐私政策，并了解其信息收集、存储和使用方式。
+
+          如果您对我们的隐私设置有任何疑问或意见，请随时与我们联系。我们将尽力解答您的问题，并持续改进我们的隐私保护措施。</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        Copyright &copy; 2024.GPT-NCCVer All rights reserved.</a>
+      </div>
+    </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="http://47.116.207.105:8080/static/vendor/aos/aos.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="http://47.116.207.105:8080/static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="http://47.116.207.105:8080/static/js/main.js"></script>
+  <script src="http://47.116.207.105:8080/static/js/docs.min.js"></script>
+
+</body>
+
+</html>
